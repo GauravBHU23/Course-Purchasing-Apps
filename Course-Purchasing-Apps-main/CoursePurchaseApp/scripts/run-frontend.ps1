@@ -17,7 +17,7 @@ function Ensure-Npm {
 }
 
 function Ensure-FrontendEnv {
-  $content = "NEXT_PUBLIC_API_URL=http://localhost:8000`r`n"
+  $content = "NEXT_PUBLIC_BACKEND_URL=https://inn-circulation-rising-observations.trycloudflare.com`r`n"
   Set-Content -Path $FrontendEnv -Value $content -Encoding ascii
 }
 

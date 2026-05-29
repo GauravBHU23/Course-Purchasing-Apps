@@ -40,7 +40,7 @@ Or start separately in two terminals:
 
 Frontend: http://localhost:3000
 
-Backend: http://localhost:8000
+Backend: https://inn-circulation-rising-observations.trycloudflare.com
 
 ### With Docker
 
@@ -77,8 +77,8 @@ docker compose up --build
 3. Open:
 
 - Frontend: http://localhost:3000
-- Backend docs: http://localhost:8000/docs
-- Health: http://localhost:8000/health
+- Backend docs: https://inn-circulation-rising-observations.trycloudflare.com/docs
+- Health: https://inn-circulation-rising-observations.trycloudflare.com/health
 
 ## Manual Backend Run
 

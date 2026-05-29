@@ -53,6 +53,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     if (GUEST_ONLY_ROUTES.has(pathname)) {
+      setUser(null);
+      setError(null);
       setLoading(false);
       return;
     }
