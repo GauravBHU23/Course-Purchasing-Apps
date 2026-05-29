@@ -34,6 +34,7 @@ export function ApiDebugPanel() {
     if (!apiDebugEnabled) {
       return;
     }
+
     return subscribeApiDebug(setEntries);
   }, []);
 

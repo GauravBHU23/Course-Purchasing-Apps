@@ -39,7 +39,9 @@ export function logApiEntry(entry: Omit<ApiDebugEntry, "id" | "createdAt">) {
 export function subscribeApiDebug(listener: Listener) {
   listeners.add(listener);
   listener(entries);
-  return () => listeners.delete(listener);
+  return () => {
+    listeners.delete(listener);
+  };
 }
 
 export function clearApiDebugEntries() {
