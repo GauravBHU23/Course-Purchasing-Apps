@@ -20,6 +20,7 @@ class Settings(BaseSettings):
     cookie_domain: str | None = None
     cookie_secure: bool = True
     cors_origins: Annotated[list[AnyHttpUrl | str], NoDecode] = []
+    cors_origin_regex: str | None = None
     admin_email: str = "admin@coursestack.app"
     admin_password: str = "change-this-admin-password"
 
